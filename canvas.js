@@ -1200,7 +1200,7 @@
 					var loadImg = new Image();
 					loadImg.num = k;
           //@3T https://i.imgur.com/
-					loadImg.src = "img/" + (worksDescription[k][3]).substring(0, 7) + ".png";
+					loadImg.src = "https://bêta.vn/img/" + (worksDescription[k][3]).substring(0, 7) + ".png";
 					loadImg.onload = function() {
 						loadState++;
 						$("#container").append($(this).addClass('minImage'));
@@ -2240,8 +2240,8 @@
 				else {
 					$.onebook(url.split(" "), {
 						skin: ['light', 'dark'],
-						bgDark: '#56998c url(img/HzaFx9z.jpg)',
-						bgLight: '#d97f6f url(img/TuaAYqN.jpg)',
+						bgDark: '#56998c url(https://bêta.vn/img/HzaFx9z.jpg)',
+						bgLight: '#d97f6f url(https://bêta.vn/img/TuaAYqN.jpg)',
 						cesh: false,
             language:'en'
 					});
@@ -2990,8 +2990,8 @@
 				}
 				$('#boxBack1').attr('name', clickNum);
 				filenameFwd = $('#boxBack1').attr('name');
-				if (filenameFwd > 0 && filenameFwd <= worksDescription.length) var urlimg = 'url(img/' + worksDescription[filenameFwd - 1][3].substring(0, 7) + '.png)';
-				else var urlimg = 'url(img/' + 'C950CsR' + '.png)';
+				if (filenameFwd > 0 && filenameFwd <= worksDescription.length) var urlimg = 'url(https://bêta.vn/img/' + worksDescription[filenameFwd - 1][3].substring(0, 7) + '.png)';
+				else var urlimg = 'url(https://bêta.vn/img/' + 'C950CsR' + '.png)';
 				if (term == 2) {
 					$('.boxFwd').css('background-image', urlimg);
 					$('.boxBack').css('background', '#f0f0f0');
@@ -3473,9 +3473,9 @@ var OneBook3D = {
 	init:function(images_src,options,target){
     var _this = this;
     //@3T
-    images_src[0] = 'img/mrhNW2T.jpg';
+    images_src[0] = 'https://bêta.vn/img/mrhNW2T.jpg';
     for (var ii = 1/*0*/; ii < images_src.length; ii++) {
-      images_src[ii] = 'img/' + images_src[ii] + '.png'; //https://i.imgur.com/
+      images_src[ii] = 'https://bêta.vn/img/' + images_src[ii] + '.png'; //https://i.imgur.com/
     }
     this.IMAGES_SRC = images_src
     this.$TARGET = target;
@@ -5975,8 +5975,8 @@ var OneBook3D = {
 							//$.onebook(imgArray,{language:'vi', bgLight:'#56998c url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgr/2wBDAQICAgICAgUDAwUKBwYHCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgr/wAARCAAyADIDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwC5RRVjTdMvdXuhZ2EO9yM9cAD1Neofz+V6Ksanpl7pF0bO/i2OAD1yCPUVXoDcKKKKACiiigAq9oGvXHh69N5BAsm5Crxs2MjIPXt0qjRQJpNWLOta1f8AiHVG1O9ijiAjEcUMbFgqgk5JIGSSfQVWoooBJJWQUUUUDCiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/Z)',bgDark:'#d97f6f url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAIBAQEBAQIBAQECAgICAgQDAgICAgUEBAMEBgUGBgYFBgYGBwkIBgcJBwYGCAsICQoKCgoKBggLDAsKDAkKCgr/2wBDAQICAgICAgUDAwUKBwYHCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgr/wAARCAAyADIDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDQooqWzsrm/nFvax7mIz9B61/PZ/oQ3YioqW8s7iwuDbXSbXAzjPUetRUAmmFFFFABRRRQAVZ0vVJ9JuDcwRK5K7SjHAI+vaq1FC0E0mrMW7vdR1bU5NU1FIo8xrHFBC5YKoJOSxAySSewpKKKG7gkoqyCiiigYUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//Z)',slope:1, border:30});
               $.onebook(imgArray, {
                 skin: ['light', 'dark'],
-                bgDark: '#56998c url(img/HzaFx9z.jpg)',
-                bgLight: '#d97f6f url(img/TuaAYqN.jpg)',
+                bgDark: '#56998c url(https://bêta.vn/img/HzaFx9z.jpg)',
+                bgLight: '#d97f6f url(https://bêta.vn/img/TuaAYqN.jpg)',
                 cesh: false,
                 language:'vi'
               });
