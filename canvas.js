@@ -1199,8 +1199,8 @@
 				for (var k = 0; k < loadAll; k++) {
 					var loadImg = new Image();
 					loadImg.num = k;
-          //@3T
-					loadImg.src = "https://i.imgur.com/" + (worksDescription[k][3]).substring(0, 7) + ".png";
+          //@3T https://i.imgur.com/
+					loadImg.src = "img/" + (worksDescription[k][3]).substring(0, 7) + ".png";
 					loadImg.onload = function() {
 						loadState++;
 						$("#container").append($(this).addClass('minImage'));
