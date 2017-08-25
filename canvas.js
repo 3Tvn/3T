@@ -7932,7 +7932,7 @@ var OneBookEditorMath = {
 				this.minFontSize = 8;
 				this.maxFontSize = 300;
 				this.angleDistortion = 0.01;
-				this.text = &quot; <data:description/> &quot;;
+				this.text = window.description;
 				// Drawing Variables
 				canvas = null;
 				context = null;
