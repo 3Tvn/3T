@@ -2990,8 +2990,8 @@
 				}
 				$('#boxBack1').attr('name', clickNum);
 				filenameFwd = $('#boxBack1').attr('name');
-				if (filenameFwd > 0 && filenameFwd <= worksDescription.length) var urlimg = 'url(https://i.imgur.com/' + worksDescription[filenameFwd - 1][3].substring(0, 7) + '.png)';
-				else var urlimg = 'url(https://i.imgur.com/' + 'C950CsR' + '.png)';
+				if (filenameFwd > 0 && filenameFwd <= worksDescription.length) var urlimg = 'url(img/' + worksDescription[filenameFwd - 1][3].substring(0, 7) + '.png)';
+				else var urlimg = 'url(img/' + 'C950CsR' + '.png)';
 				if (term == 2) {
 					$('.boxFwd').css('background-image', urlimg);
 					$('.boxBack').css('background', '#f0f0f0');
