@@ -2240,8 +2240,8 @@
 				else {
 					$.onebook(url.split(" "), {
 						skin: ['light', 'dark'],
-						bgDark: '#56998c url(https://i.imgur.com/HzaFx9z.jpg)',
-						bgLight: '#d97f6f url(https://i.imgur.com/TuaAYqN.jpg)',
+						bgDark: '#56998c url(img/HzaFx9z.jpg)',
+						bgLight: '#d97f6f url(img/TuaAYqN.jpg)',
 						cesh: false,
             language:'en'
 					});
